@@ -23,7 +23,13 @@ input, textarea {
     border: none;
     padding: 10px;
     resize: none;
+    border-radius: 15px;
 }
+input:hover {
+    
+    border-color: #10071d;
+}
+
 input::placeholder, textarea::placeholder {
     color: black;
 }
@@ -157,6 +163,7 @@ section {
     font-size: 18px;
 }
 #contact {
+    background: url("img/banner-site.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,6 +180,25 @@ section {
     color: white;
     text-align: center;
     text-transform: uppercase;
+}
+#contact form button {
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    background-color: #10071d;
+    padding: 14px 18px;
+    color: white;
+    font-family: "gilroy";
+    font-weight: 100;
+    font-size: 18px;
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+#contact form button:hover {
+    background-color: #190E2A;
+}
+#contact form * {
+    margin: 12px 0;
 }
 footer {
     display: flex;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Contato Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>dev.blog</h1>
@@ -29,7 +31,7 @@
     </header>
     <main>
         <section id="contact">
-            <form>
+            <form onsubmit="enviarEmail(event)">
                 <h1>Contato</h1>
                 <input type="text" name="name" id="name" placeholder="Nome..." required>
                 <input type="email" name="email" id="email" placeholder="Email..." required>
@@ -74,5 +76,25 @@
                 </svg></a>
         </div>
     </footer>
+    <script>
+        function enviarEmail(event) {
+            event.preventDefault();
+            fetch("https://emailer-api.herokuapp.com/sender", {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json',
+                },
+                body: JSON.stringify({
+                    emailFrom: document.getElementById('email').value,
+                    emailTo: 'silveerio20@gmail.com',
+                    name: document.getElementById('name').value,
+                    message: document.getElementById('message').value
+                })
+            })
+                .then(() => alert('sucesso'))
+                .catch(() => alert('Erro ao enviar o email'));
+        }
+    </script>
 </body>
+
 </html>
