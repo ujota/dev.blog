@@ -145,6 +145,46 @@ section {
     font-size: 18px;
 }
 footer {
-    background-color: #10071d;
-    height: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #190E2A;
+    padding: 0 100px;
+}
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+}
+footer .info .personal-info {
+    display: flex;
+    align-items: center;
+    font-family: "gilroy";
+    font-weight: 100;
+    color: white;
+}
+footer .personal-info img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+footer .info .personal-info h1 {
+    font-size: 18px;
+}
+footer .info .personal-info p {
+    margin-top: 2px;
+}
+footer .info .contact {
+    font-family: "gilroy";
+    color: white;
+    text-align: right;
+   
+}
+footer .info .contact h1 {
+    font-size: 18px;
+}
+footer .info .contact p {
+    margin-top: 2px;
 }
