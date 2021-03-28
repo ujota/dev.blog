@@ -59,7 +59,15 @@ header .dropdown .dropdown-content a {
     font-size: 18px;
     text-align: right;
     transition: all 0.4s;
-    border-radius: 15px;
+    
+}
+header .dropdown .dropdown-content a:nth-child(1) {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+header .dropdown .dropdown-content a:nth-last-child(1) {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 header .dropdown .dropdown-content a:hover {
     background-color: #10071d;
