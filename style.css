@@ -77,6 +77,11 @@ header .dropdown:hover .dropdown-content{
 }
 section {
     height: 100vh;
-    padding: 100px;
+    padding: 0px 100px;
     position: relative;
+}
+#primary-screen {
+    background: url("img/banner-site.png");
+    background-size: cover;
+    background-position: center;
 }
