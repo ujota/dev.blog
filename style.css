@@ -15,6 +15,18 @@
 body {
     background-color: #361D5A;
 }
+input, textarea {
+    font-family: "gilroy";
+    font-weight: 100;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    resize: none;
+}
+input::placeholder, textarea::placeholder {
+    color: black;
+}
 header {
     display: flex;
     height: 100px;
@@ -144,6 +156,24 @@ section {
     font-weight: 100;
     font-size: 18px;
 }
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact form h1 {
+    font-family: "gilroy";
+    font-weight: 800;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
 footer {
     display: flex;
     align-items: center;
@@ -187,4 +217,17 @@ footer .info .contact h1 {
 }
 footer .info .contact p {
     margin-top: 2px;
+}
+footer .links a {
+    text-decoration: none;
+}
+
+footer .links svg {
+    fill: white;
+    width: 30px;
+    margin: 10px 8px;
+    transition: all 0.4s;
+}
+footer .links svg:hover {
+    fill: #361D5A;
 }
