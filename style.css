@@ -166,7 +166,7 @@ section {
     background: url("img/banner-site.png");
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 100px;
 }
 #contact form {
     display: flex;

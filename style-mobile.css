@@ -1,0 +1,55 @@
+@media screen and (max-width: 630px) {
+    header {
+        padding: 0px 10px;
+        width: calc(100% - 20px);
+    }
+    #primary-screen {
+        padding: 0px 10px;
+
+    }
+    #primary-screen h1{
+        font-size: 60px;
+    }
+    #primary-screen p {
+        margin-top: 40px;
+        font-size: 19px;
+        width: 300px;
+    }
+    #secondary-screen{
+        display: initial;
+    }
+    #secondary-screen img{
+        display: none;
+    }
+    #secondary-screen .publication {
+        width: 90%;
+        margin-left: 5%;
+    }
+    #secondary-screen .publication h1{
+        font-size: 15px;
+
+    }
+    
+    footer {
+        padding: 5px 10px;
+    }
+    footer .info{
+        display: initial;
+    }
+    footer .info .personal-info {
+        left: 10px;
+    }
+    footer .personal-info img{
+        width: 80px;
+    }
+    footer .info .personal-info h1 {
+        font-size: 15px;
+    }
+    footer .info .contact{
+        margin-top: 10px;
+        text-align: center;
+    }
+    footer .links svg{
+        margin-top: 40px;
+    }
+}
